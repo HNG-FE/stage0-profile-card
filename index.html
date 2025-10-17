@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="user-info">
+        <figure>
+          <img
+            src="https://avatars.githubusercontent.com/u/169891780?v=4"
+            alt="User Avatar"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+
+        <header>
+          <h2 data-testid="test-user-name">ABDULMALIK Abdulmalik</h2>
+          <p data-testid="test-user-bio">
+            A passionate Frontend Developer who enjoys building responsive,
+            accessible, simple and elegant user interfaces, bringing ideas and
+            designs to life in the browser.
+          </p>
+          <nav data-testid="test-user-social-links">
+            <ul>
+              <li>
+                <a
+                  href="https://twitter.com/_aamalik_"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-twitter"
+                >
+                  Twitter
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/A6dulmalik"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-github"
+                >
+                  GitHub
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://linkedin.com/in/abdulmalik-abdulmalik-2a039a1b4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="test-user-social-linkedin"
+                >
+                  LinkedIn
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+      </div>
+
+      <div class="additional-info">
+        <section>
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Watchng</li>
+            <li>Reading</li>
+            <li>Site Seeing</li>
+            <li>Gaming</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Being Unmotivated</li>
+            <li>Procrastination</li>
+            <li>Unoptimized code</li>
+            <li>Debugging Code</li>
+          </ul>
+        </section>
+      </div>
+
+      <p>
+        <span>
+          Current Time (ms) :
+          <span data-testid="test-user-time"> </span>
+        </span>
+      </p>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
