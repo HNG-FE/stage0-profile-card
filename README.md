@@ -2,14 +2,14 @@
 
 # stage0-profile-card
 
-A responsive, accessible **Profile Card** built with plain HTML, CSS, and JavaScript for the **HNG Internship**.
+A responsive, accessible **Profile Card** built with plain HTML, CSS, and JavaScript. A part of the **HNG Internship** tasks.
 A contact and about me page, with a form and information about myself respectively.
 
 ---
 
 ## 🚀 Live Demo
 
-👉 [Live Link]()
+👉 [Live Link](https://hng-fe.github.io/stage0-profile-card/)
 
 ---
 
