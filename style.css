@@ -6,11 +6,25 @@ body {
   font-family: system-ui, sans-serif;
   background: #f4f6f8;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   margin: 0;
   padding: 1rem;
+}
+
+/* --------HOME PAGE------- */
+.navlinks {
+  display: flex;
+  gap: 12rem;
+  margin-top: -10rem;
+  font-size: larger;
+}
+
+.navlinks a:hover {
+  text-decoration: dashed underline;
+  color: #000;
 }
 
 article {
@@ -64,7 +78,7 @@ nav a {
 
 nav a:focus,
 nav a:hover {
-  color: #000;
+  color: #5a8cf7;
   transform: rotate(360deg);
 }
 
@@ -75,9 +89,123 @@ span {
   font-family: "Courier New", Courier, monospace;
 }
 
+/* ---------CONTACT US------------- */
+form {
+  width: 100%;
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===== Form Group ===== */
+.form-group {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* ===== Input Fields ===== */
+input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* On focus */
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.1);
+}
+
+/* ===== Error & Success Messages ===== */
+.error-message,
+.success-message {
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+  display: none; /* Hidden by default */
+}
+
+#error-name,
+#error-email,
+#error-subject,
+#error-message {
+  color: #d93025;
+  font-size: small;
+}
+
+.success-message {
+  color: #28a745;
+}
+
+/* ===== Input Error/Success Borders ===== */
+input.error {
+  color: #d93025;
+  border-color: #d93025;
+  background-color: #ffe6e6;
+}
+
+input.success {
+  border-color: #28a745;
+  background-color: #e6ffe6;
+}
+
+/* ===== Submit Button ===== */
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-1px);
+}
+
+/* --------RESPONSIVE DESIGN------- */
 @media (max-width: 767px) {
+  /* -------HOME PAGE------- */
   article {
     max-width: 420px;
+  }
+
+  .navlinks {
+    margin-top: 0;
+    gap: 6rem;
+    font-size: large;
   }
 
   .user-info {
@@ -92,5 +220,12 @@ span {
 
   .additional-info {
     justify-content: center;
+  }
+
+  /* -------CONTACT US------- */
+  @media (max-width: 500px) {
+    form {
+      padding: 1.5rem;
+    }
   }
 }

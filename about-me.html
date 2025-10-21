@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+        background-color: #fafafa;
+        color: #333;
+      }
+
+      header {
+        /* background: #222; */
+        /* color: #fff; */
+        text-align: center;
+        padding: 1.5rem 1rem;
+      }
+
+      nav a {
+        /* color: #fff; */
+        margin: 0 2rem;
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+      }
+
+      section {
+        margin-bottom: 2rem;
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h2 {
+        color: #222;
+        margin-bottom: 0.8rem;
+      }
+
+      blockquote {
+        font-style: italic;
+        background: #f9f9f9;
+        border-left: 5px solid #4caf50;
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem;
+        /* background: #222;
+        color: #fff; */
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 0 0.8rem;
+        }
+
+        section {
+          padding: 1rem;
+        }
+
+        nav a {
+          display: inline-block;
+          margin: 0.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>About Me</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main data-testid="test-about-page">
+      <!-- Bio Section -->
+      <section data-testid="test-about-bio">
+        <h2>My Bio</h2>
+        <p>
+          Hello! My name is Abdulmalik Abdulmalik, a passionate frontend
+          developer currently participating in the HNG Internship program. I
+          love building user-friendly and responsive web interfaces that deliver
+          value and accessibility.
+        </p>
+      </section>
+
+      <!-- Goals Section -->
+      <section data-testid="test-about-goals">
+        <h2>My Goals in this Program</h2>
+        <ul>
+          <li>
+            Strengthen my frontend development skills (React, Tailwind, etc.)
+          </li>
+          <li>Collaborate effectively in team-based projects</li>
+          <li>Improve my problem-solving and debugging techniques</li>
+          <li>
+            Build production-ready projects with clean and accessible code
+          </li>
+        </ul>
+      </section>
+
+      <!-- Areas of Low Confidence -->
+      <section data-testid="test-about-confidence">
+        <h2>Areas I Want to Improve</h2>
+        <p>
+          While I’m confident in my UI design and structure, I’d like to improve
+          my speed in solving algorithmic challenges and gain deeper comfort
+          with backend integrations and authentication.
+        </p>
+      </section>
+
+      <!-- Note to Future Self -->
+      <section data-testid="test-about-future-note">
+        <h2>Note to My Future Self</h2>
+        <blockquote>
+          Keep building, stay curious, and never stop learning. Every project,
+          no matter how small, is another step forward in your growth.
+        </blockquote>
+      </section>
+
+      <!-- Extra Thoughts -->
+      <section data-testid="test-about-extra">
+        <h2>Extra Thoughts</h2>
+        <p>
+          I believe consistency beats motivation. The key is to keep pushing,
+          collaborating, and contributing — because that’s how we grow as
+          developers and as a community.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Abdulmalik Abdulmalik | HNG Internship</p>
+    </footer>
+  </body>
+</html>
